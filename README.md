@@ -6,7 +6,7 @@
 
 # ModulesVBA
 
-Módulos de Formatação e Preferências em VBA Excel
+Módulos de Formatação e Preferências em VBA Excel.
 
 ### Desenvolvimento
 
@@ -31,41 +31,73 @@ Estes módulos foram desenvolvidos no Excel 2019 (64 bits) e testados no Excel 2
 
 ### Usabilidade
 
-Para utilizar este exemplo o usuário deverá:
+Para utilizar os módulos o usuário deverá:
 
-* Realizar o download do arquivo ZIP: __ProgressBars__.
-* Abrir o arquivo __ProgressBars.xlsm__, ou importar através do VBA os arquivos __Módulo1.bas__ e __UserForm1.frm__.
+* Realizar o download do arquivo ZIP: __ModulesVBA__.
+* Abrir o Excel.
+* Importar através do VBA os arquivos __ModControls.bas__ e __ModPreferences.bas__.
 ***
-### Demo
 
-![GIF](https://github.com/felipebacelo/ProgressBars/blob/main/Demo.gif)
+### Macros e Funções dos Módulos
 
+#### ModControls
+
+* FormatData (Macro utilizada para formatar datas)
+* FormatMoeda (Macro utilizada para formatar moeda)
+* FormatCEP (Macro utilizada para formatar CEP)
+* FormatCPF (Macro utilizada para formatar CPF)
+* FormatCNPJ (Macro utilizada para formatar CNPJ)
+* FormatCelular (Macro utilizada para formatar celular)
+* FormatTelefone (Macro utilizada para formatar telefone)
 ***
-### Exemplo de Macro Utilizada
+
+#### ModPreferences
+
+* TelaMenu (Macro utilizada para desabilitar alguns recursos do Excel deixando-o com uma cara de executável)
+* TelaNormal (Macro utilizada para retornar os recursos padrões de exibição do Excel)
+* CriarPasta (Macro utilizada para criar pasta)
+* SalvarPDF (Macro utilizada para salvar o arquivo em PDF)
+* LimparPlanilha (Macro utilizada para limpar a planilha)
+* SelecionaArquivo (Função utilizada para abrir a caixa de seleção de arquivos)
+***
+
+### Exemplo de Função Utilizada
 
 ```
 Option Explicit
 
-Private Sub UserForm_Activate()
-
-ProgressBar.Width = 0
-
-Do While ProgressBar.Width < 396
+Function SelecionaArquivo(Optional Filtro As String = "", Optional Extensao As String = "", _
+Optional Titulo As String = "", Optional Email As Boolean = False) As String
     
-    Sleep (10)
-
-    ProgressBar.Width = ProgressBar.Width + 2
+    Dim Caixa As FileDialog
     
-    DoEvents
+    Set Caixa = Application.FileDialog(msoFileDialogOpen)
     
-Loop
-
-MsgBox "Seja Bem Vindo ao ProgressBar!!!", vbInformation, "ProgressBar"
-
-Me.Hide
-
-End Sub
+    With Caixa
+        
+        .InitialView = msoFileDialogViewDetails
+        
+        .InitialFileName = "C:\"
+        
+        .AllowMultiSelect = Email
+        
+        If Filtro <> Empty Then
+            .Filters.Clear
+            .Filters.Add Filtro, Extensao
+        End If
+        
+    End With
+    
+    Caixa.Show
+    
+    SelecionaArquivo = ""
+    
+    On Error Resume Next
+        SelecionaArquivo = Caixa.SelectedItems(1)
+    
+End Function
 ```
+
 ***
 ### Licenças
 
