@@ -63,7 +63,7 @@ Para utilizar os módulos o usuário deverá:
 
 ### Exemplo de Função Utilizada
 
-```
+```vba
 Option Explicit
 
 Function SelecionaArquivo(Optional Filtro As String = "", Optional Extensao As String = "", _
