@@ -1,8 +1,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/felipebacelo/ModulesVBA?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/felipebacelo/ModulesVBA?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/felipebacelo/ModulesVBA?style=for-the-badge)
-![GitHub All Releases](https://img.shields.io/github/downloads/felipebacelo/ModulesVBA/total?style=for-the-badge)
-![GitHub followers](https://img.shields.io/github/followers/felipebacelo?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/felipebacelo/ModulesVBA?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/felipebacelo/ModulesVBA?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/felipebacelo/ModulesVBA?style=for-the-badge)
 
 # ModulesVBA
 
@@ -103,4 +103,3 @@ End Function
 
 _MIT License_
 _Copyright   ©   2020 Felipe Bacelo Rodrigues_
-
