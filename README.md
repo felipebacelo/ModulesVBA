@@ -1,8 +1,10 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/felipebacelo/ModulesVBA?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/felipebacelo/ModulesVBA?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/felipebacelo/ModulesVBA?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/felipebacelo/ModulesVBA?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/felipebacelo/ModulesVBA?style=for-the-badge)
+<p align="center">
+<a href= "https://img.shields.io/github/repo-size/felipebacelo/ModulesVBA?style=for-the-badge"><img src="https://img.shields.io/github/repo-size/felipebacelo/ModulesVBA?style=for-the-badge"/></a>
+<a href= "https://img.shields.io/github/languages/count/felipebacelo/ModulesVBA?style=for-the-badge"><img src="https://img.shields.io/github/languages/count/felipebacelo/ModulesVBA?style=for-the-badge"/></a>
+<a href= "https://img.shields.io/github/forks/felipebacelo/ModulesVBA?style=for-the-badge"><img src="https://img.shields.io/github/forks/felipebacelo/ModulesVBA?style=for-the-badge"/></a>
+<a href= "https://img.shields.io/bitbucket/pr-raw/felipebacelo/ModulesVBA?style=for-the-badge"><img src="https://img.shields.io/bitbucket/pr-raw/felipebacelo/ModulesVBA?style=for-the-badge"/></a>
+<a href= "https://img.shields.io/bitbucket/issues/felipebacelo/ModulesVBA?style=for-the-badge"><img src="https://img.shields.io/bitbucket/issues/felipebacelo/ModulesVBA?style=for-the-badge"/></a>
+</p>
 
 # ModulesVBA
 
@@ -38,27 +40,27 @@ Para utilizar os módulos o usuário deverá:
 * Importar através do VBA os arquivos __ModControls.bas__ e __ModPreferences.bas__.
 ***
 
-### Macros e Funções dos Módulos
+### Descrição dos Módulos
 
 #### ModControls
 
-* FormatData (Macro utilizada para formatar datas)
-* FormatMoeda (Macro utilizada para formatar moeda)
-* FormatCEP (Macro utilizada para formatar CEP)
-* FormatCPF (Macro utilizada para formatar CPF)
-* FormatCNPJ (Macro utilizada para formatar CNPJ)
-* FormatCelular (Macro utilizada para formatar celular)
-* FormatTelefone (Macro utilizada para formatar telefone)
+* FormatData (utilizada para formatar datas)
+* FormatMoeda (utilizada para formatar moeda)
+* FormatCEP (utilizada para formatar CEP)
+* FormatCPF (utilizada para formatar CPF)
+* FormatCNPJ (utilizada para formatar CNPJ)
+* FormatCelular (utilizada para formatar celular)
+* FormatTelefone (utilizada para formatar telefone)
 ***
 
 #### ModPreferences
 
-* TelaMenu (Macro utilizada para desabilitar alguns recursos do Excel deixando-o com uma cara de executável)
-* TelaNormal (Macro utilizada para retornar os recursos padrões de exibição do Excel)
-* CriarPasta (Macro utilizada para criar pasta)
-* SalvarPDF (Macro utilizada para salvar o arquivo em PDF)
-* LimparPlanilha (Macro utilizada para limpar a planilha)
-* SelecionaArquivo (Função utilizada para abrir a caixa de seleção de arquivos)
+* TelaMenu (utilizada para desabilitar alguns recursos do Excel deixando-o com uma cara de executável)
+* TelaNormal (utilizada para retornar os recursos padrões de exibição do Excel)
+* CriarPasta (utilizada para criar pasta)
+* SalvarPDF (utilizada para salvar o arquivo em PDF)
+* LimparPlanilha (utilizada para limpar a planilha)
+* SelecionaArquivo (utilizada para abrir a caixa de seleção de arquivos)
 ***
 
 ### Exemplo de Função Utilizada
